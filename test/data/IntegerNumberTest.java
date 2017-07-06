@@ -13,6 +13,8 @@ import static org.junit.Assert.*;
  */
 public class IntegerNumberTest {
     
+    IntegerNumber instance = new IntegerNumber(631);
+    
     public IntegerNumberTest() {
     }
     
@@ -37,13 +39,11 @@ public class IntegerNumberTest {
      */
     @Test
     public void testGetValue() {
-        System.out.println("getValue");
-        IntegerNumber instance = null;
-        int expResult = 0;
+        System.out.println("getValue");        
+        int expResult = 631;
         int result = instance.getValue();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        // TODO review the generated test code and remove the default call to fail.        
     }
 
     /**
@@ -52,11 +52,9 @@ public class IntegerNumberTest {
     @Test
     public void testSetValue() {
         System.out.println("setValue");
-        int value = 0;
-        IntegerNumber instance = null;
+        int value = 631;        
         instance.setValue(value);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        // TODO review the generated test code and remove the default call to fail.        
     }
 
     /**
