@@ -9,7 +9,7 @@ import static org.junit.Assert.*;
  */
 public class IntegerNumberIT {
     
-    private final IntegerNumber instance = new IntegerNumber(631);
+    private IntegerNumber instance = new IntegerNumber(631);
     
     public IntegerNumberIT() {
     }        
