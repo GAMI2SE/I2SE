@@ -13,19 +13,21 @@ import static org.junit.Assert.*;
  */
 public class IntegerNumberTest {
 
-    IntegerNumber instance;
+    IntegerNumber testcase1, testcase2;
 
     public IntegerNumberTest() {
     }
 
     @Before
     public void setUp() {
-        instance = new IntegerNumber(631);
+        testcase1 = new IntegerNumber(631);
+        testcase2 = new IntegerNumber(4);
     }
 
     @After
     public void tearDown() {
-        instance = null;
+        testcase1 = null;
+        testcase2 = null;
     }
 
     /**
@@ -33,9 +35,11 @@ public class IntegerNumberTest {
      */
     @Test
     public void testIsPrimeNumber() {        
-        boolean result = instance.isPrimeNumber();
+        boolean result1 = testcase1.isPrimeNumber();
+        boolean result2 = testcase2.isPrimeNumber();
 
-        assertTrue(result);        
+        assertTrue(result1);
+        assertFalse(result2);
     }
 
 }
